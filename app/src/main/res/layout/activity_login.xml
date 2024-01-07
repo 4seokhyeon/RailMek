@@ -5,5 +5,84 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".login.LoginActivity">
+    <!--맨 위 로그인 문구-->
+    <TextView
+        android:id="@+id/tv_Login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="로그인"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.153" />
+
+    <!--로그인 입력 설명과 칸-->
+    <EditText
+        android:id="@+id/et_Login"
+        android:layout_width="299dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="176dp"
+        android:ems="10"
+        android:hint="아이디6~10자"
+        android:inputType="numberPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--비밀번호 입력 설명과 칸-->
+    <EditText
+        android:id="@+id/et_Password"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:hint="비밀번호 영문, 숫자 혼합8~12자"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.317" />
+
+    <!--로그인 버튼-->
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="264dp"
+        android:layout_height="48dp"
+        android:hint="로그인"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399" />
+
+    <!--간편 회원가입 문구-->
+    <TextView
+        android:id="@+id/tv_easy_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="간편 로그인"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.856" />
+
+    <!--카카오 로그인 버튼-->
+    <ImageButton
+        android:id="@+id/ib_kakao_login"
+        android:layout_width="192dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="InvalidId"
+        android:contentDescription="kakaologin"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
