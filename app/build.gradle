@@ -22,6 +22,9 @@ android {
 
         buildConfigField("String", "SubWay_Api_Key", localProperties.getProperty('api.key'))
         manifestPlaceholders["subway_key"] = localProperties.getProperty('api.key')
+
+        buildConfigField("String", "SubWay_realtime_Key", localProperties.getProperty('api.key2'))
+        manifestPlaceholders["subway_realtime_key"] = localProperties.getProperty('api.key2')
     }
 
     buildTypes {
