@@ -1,6 +1,5 @@
 package com.subway.railmek.retrofit
 
-import androidx.lifecycle.ViewModelProvider.NewInstanceFactory.Companion.instance
 import com.subway.railmek.unit.Unit.API
 import com.subway.railmek.unit.Unit.BASE_URL
 import okhttp3.OkHttpClient
@@ -8,8 +7,8 @@ import okhttp3.Request
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-object Retrofit {
-    val api: RetrofitInterface get() = instance.create(RetrofitInterface::class.java)
+object FullRouteInformation {
+    val api: FullRouteInfoInterface get() = instance.create(FullRouteInfoInterface::class.java)
 
     private val instance: Retrofit
         get() {

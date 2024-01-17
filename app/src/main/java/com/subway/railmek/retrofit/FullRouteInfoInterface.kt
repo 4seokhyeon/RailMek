@@ -5,7 +5,7 @@ import com.subway.railmek.unit.Unit.API
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface RetrofitInterface {
+interface FullRouteInfoInterface {
 
     @GET("subwayRouteInfo")
     suspend fun getSubwayInfo(
@@ -14,4 +14,6 @@ interface RetrofitInterface {
         @Query("lnCd") lnCd: String ="1",
         @Query("mreaWideCd") mreaWideCd: String ="01"
     ): SubwayInfo
+
+
 }
